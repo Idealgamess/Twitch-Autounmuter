@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "Twitch Auto Unmute",
+  "version": "1.0",
+  "description": "Automatically unmutes Twitch streams if they get muted.",
+  "content_scripts": [
+    {
+      "matches": ["*://*.twitch.tv/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
